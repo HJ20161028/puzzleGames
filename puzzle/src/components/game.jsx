@@ -4,7 +4,7 @@ import { shuffle, isNearby, getReverseNumber, hasSolution } from '../utils';
 import dapingshanImg from '../assets/dapingshan.jpg';
 import qilingtaImg from '../assets/qilingta.jpg';
 import taishanImg from '../assets/taishan.jpg';
-import teamImg from '../assets/team.jpg';
+import gameImg from '../assets/gameloading.png';
 
 const Game = () => {
   const [oriImg, setOriImg] = useState(dapingshanImg);
@@ -89,7 +89,7 @@ const Game = () => {
     setTips((prevState) => !prevState);
   }
   function replaceImg() {
-    const imgArr = [dapingshanImg, qilingtaImg, taishanImg, teamImg]
+    const imgArr = [dapingshanImg, qilingtaImg, taishanImg, gameImg]
     const index = Math.floor(Math.random() * 4);
     if (imgArr[index] === oriImg) {
       replaceImg();
